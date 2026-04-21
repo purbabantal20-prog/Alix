@@ -40,7 +40,7 @@ h1 {
     border:none;
 }
 
-/* CARDS */
+/* STORE */
 .container {
     padding:30px;
 }
@@ -75,7 +75,7 @@ button {
     cursor:pointer;
 }
 
-/* PAYMENT PAGE */
+/* PAYMENT */
 #paymentPage {
     display:none;
     text-align:center;
@@ -114,6 +114,26 @@ button {
     border-radius:8px;
     cursor:pointer;
 }
+
+/* FOOTER TERMS */
+.footer-terms {
+    background:#ffffff;
+    border-top:1px solid #ddd;
+    padding:30px;
+    margin-top:40px;
+    text-align:center;
+    font-size:14px;
+    color:#333;
+    line-height:1.6;
+}
+
+.footer-terms h3 {
+    margin-top:20px;
+}
+
+.footer-terms p {
+    margin:8px 0;
+}
 </style>
 </head>
 
@@ -128,7 +148,7 @@ button {
     <iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
 </div>
 
-<!-- STORE -->
+<!-- MAIN STORE -->
 <div id="mainPage">
 
 <div class="container">
@@ -193,6 +213,56 @@ button {
 
 </div>
 
+<!-- FOOTER TERMS -->
+<div class="footer-terms">
+
+<h3>📌 Activation Instructions</h3>
+
+<p>
+1️⃣ Subscribe to the official YouTube channel<br>
+2️⃣ Select your device's operating system (Android / iOS / Computer)<br>
+3️⃣ Sharing Alix-MOD will result in a ban
+</p>
+
+<h3>📌 Important Notes</h3>
+
+<p>
+The use of VPN services while using Alix-MOD is strictly prohibited.
+</p>
+
+<p>
+⚠️ By receiving the code, you automatically agree to all the terms and conditions mentioned above.
+</p>
+
+<h3>📱 Supported Devices</h3>
+
+<p>
+✔ Android<br>
+✔ iOS<br>
+✔ PC
+</p>
+
+<p>
+⏳ Subscription: Lifetime<br>
+💵 Currency: USD
+</p>
+
+<h3>⚡ Features</h3>
+
+<p>
+• Lifetime access<br>
+• Free automatic updates
+</p>
+
+<h3 style="color:red;">🚫 Warning</h3>
+
+<p>
+This code is private and confidential.<br>
+Any sharing or leaking will result in a ban.
+</p>
+
+</div>
+
 <script>
 
 let device = "";
@@ -225,7 +295,6 @@ function pay(method){
 `USDT (BEP20)
 
 Price: $4
-Network: BSC (BEP20)
 
 Address:
 0x461622008b961d7b9210c7b0f9c5f38ecbe5c985`
@@ -233,14 +302,7 @@ Address:
     }
 
     if(method === "wise"){
-        alert(
-`Wise Payment
-
-Price: $4
-
-Send to Wise account:
-YOUR_EMAIL`
-        );
+        alert("Wise Payment: $4\nSend to your Wise account/email");
     }
 
 }
