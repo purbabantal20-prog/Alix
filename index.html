@@ -5,140 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alix-MOD</title>
 
-<style>
-body {
-    margin:0;
-    font-family: Arial;
-    background:#f5f5f5;
-}
-
-header {
-    background:#fff;
-    padding:12px;
-    text-align:center;
-    border-bottom:1px solid #ddd;
-}
-
-/* VIDEO */
-.video {
-    text-align:center;
-    padding:10px;
-    background:white;
-    margin:10px;
-    border-radius:10px;
-}
-
-.video iframe {
-    width:100%;
-    height:200px;
-    border:none;
-}
-
-/* STORE */
-.container {
-    padding:10px;
-}
-
-.platforms {
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:10px;
-}
-
-.card {
-    background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:12px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    height:120px;
-}
-
-.card img {
-    width:50px;
-}
-
-/* BUTTON */
-button {
-    margin-top:5px;
-    padding:8px;
-    width:100%;
-    background:#ffa41c;
-    border:none;
-    border-radius:6px;
-}
-
-/* PAYMENT */
-#paymentPage {
-    display:none;
-    text-align:center;
-    padding:10px;
-}
-
-.pay-options {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:10px;
-    margin-top:10px;
-}
-
-.pay-card {
-    background:white;
-    border:1px solid #ddd;
-    padding:12px;
-    border-radius:10px;
-}
-
-.pay-card img {
-    width:60px;
-    height:60px;
-}
-
-/* تكبير PayPal */
-.pay-card img.paypal {
-    width:75px;
-    height:75px;
-}
-
-/* CONTACT */
-.contact {
-    background:#fff;
-    padding:15px;
-    margin:10px;
-    border-radius:10px;
-}
-
-.contact-box {
-    display:flex;
-    justify-content:space-between;
-}
-
-.contact-item {
-    width:48%;
-    background:#f9f9f9;
-    padding:10px;
-    border-radius:10px;
-    text-align:center;
-    text-decoration:none;
-    color:black;
-}
-
-.contact-item img {
-    width:40px;
-}
-
-/* FOOTER */
-.footer-terms {
-    background:#fff;
-    padding:15px;
-    font-size:13px;
-    text-align:center;
-    line-height:1.6;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -147,12 +14,14 @@ button {
 <h2>Alix-MOD</h2>
 </header>
 
+<!-- VIDEO -->
 <div class="video">
 <iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
 </div>
 
 <!-- STORE -->
 <div id="mainPage">
+
 <div class="container">
 <div class="platforms">
 
@@ -180,7 +49,13 @@ button {
 
 <!-- PAYMENT -->
 <div id="paymentPage">
+
 <h3 id="deviceTitle"></h3>
+
+<!-- BUYERS COUNTER -->
+<div class="buyers-box">
+🛒 Total Buyers: <span id="buyersCount">14</span>
+</div>
 
 <div class="pay-options">
 
@@ -211,15 +86,17 @@ button {
 
 </div>
 
-<p style="margin-top:15px; font-weight:bold;">
-📩 To purchase, please contact me via Telegram or Discord and mention your selected payment method.
+<p class="contact-text">
+📩 Contact me on Telegram or Discord to complete purchase
 </p>
 
 <button onclick="back()">⬅ Back</button>
+
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
+
 <div class="contact-box">
 
 <a href="https://t.me/Us_rx" class="contact-item">
@@ -233,6 +110,7 @@ button {
 </a>
 
 </div>
+
 </div>
 
 <!-- FOOTER -->
@@ -240,25 +118,17 @@ button {
 
 <p><b>Alix-MOD | Lifetime | No VPN | Private Code</b></p>
 
-<br>
-
 <p>
 📌 Activation Instructions<br>
-1️⃣ Subscribe to the official YouTube channel<br>
-2️⃣ Select your device<br>
-3️⃣ Do NOT share the code<br><br>
+1️⃣ Subscribe to YouTube channel<br>
+2️⃣ Select device<br>
+3️⃣ Do NOT share code<br><br>
 
-📌 Important Notes<br>
-VPN usage is strictly prohibited<br><br>
+📱 Android / iOS / PC<br><br>
 
-📱 Supported: Android / iOS / PC<br><br>
+⚡ Lifetime access + updates<br><br>
 
-⚡ Features<br>
-• Lifetime access<br>
-• Free updates<br><br>
-
-🚫 Warning<br>
-Sharing = permanent ban
+🚫 Sharing = ban
 </p>
 
 </div>
