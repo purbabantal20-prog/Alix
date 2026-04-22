@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alix-MOD</title>
-
-<style>
 body {
     margin:0;
     font-family: Arial;
@@ -17,6 +9,12 @@ header {
     padding:12px;
     text-align:center;
     border-bottom:1px solid #ddd;
+}
+
+.subtitle {
+    font-size:13px;
+    color:#666;
+    margin-top:5px;
 }
 
 /* VIDEO */
@@ -57,6 +55,7 @@ header {
     width:50px;
 }
 
+/* BUTTON */
 button {
     margin-top:5px;
     padding:8px;
@@ -87,15 +86,16 @@ button {
     border-radius:10px;
 }
 
+/* 🔥 تكبير كل الصور */
 .pay-card img {
-    width:50px;
-    height:50px;
+    width:65px;
+    height:65px;
 }
 
-/* 🔥 PayPal تكبير فقط */
+/* 🔥 PayPal أكبر بكثير */
 .pay-card img.paypal {
-    width:75px;
-    height:75px;
+    width:95px;
+    height:95px;
 }
 
 /* CONTACT */
@@ -142,129 +142,5 @@ button {
     padding:15px;
     font-size:13px;
     text-align:center;
+    line-height:1.6;
 }
-</style>
-</head>
-
-<body>
-
-<header>
-<h2>Alix-MOD</h2>
-</header>
-
-<div class="video">
-<iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
-</div>
-
-<!-- STORE -->
-<div id="mainPage">
-<div class="container">
-<div class="platforms">
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
-<p>iOS</p>
-<button onclick="openPay('iOS')">Select</button>
-</div>
-
-<div class="card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg">
-<p>Android</p>
-<button onclick="openPay('Android')">Select</button>
-</div>
-
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png">
-<p>PC</p>
-<button onclick="openPay('PC')">Select</button>
-</div>
-
-</div>
-</div>
-</div>
-
-<!-- PAYMENT -->
-<div id="paymentPage">
-<h3 id="deviceTitle"></h3>
-
-<div class="pay-options">
-
-<div class="pay-card">
-<img class="paypal" src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
-<p>PayPal $5</p>
-</div>
-
-<div class="pay-card">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtVSSiw-oOmMhxlC1RWE_jowqLPjA3XBwtNKW6j8lg&s=10">
-<p>USDT $4</p>
-</div>
-
-<div class="pay-card">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_jv45R6IfJ-tUpSM_wiZuIQvCyjfex-a7dplE23cfA&s=10">
-<p>Wise $4</p>
-</div>
-
-<div class="pay-card">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJPx2CK7RSdeBJUSMSB_I46RPvB8BuXr_eGns-f_t_A&s=10">
-<p>Binance Pay $4</p>
-</div>
-
-<div class="pay-card">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQplSM5RDSTSaDjLkJn-xzAnibPmgGI1BtrH5eCGIDw3A&s=10">
-<p>RedotPay $4</p>
-</div>
-
-</div>
-
-<p style="margin-top:10px; font-weight:bold;">
-📩 Contact me on Telegram or Discord to buy
-</p>
-
-<button onclick="back()">⬅ Back</button>
-</div>
-
-<!-- CONTACT -->
-<div class="contact">
-<div class="contact-box">
-
-<a href="https://t.me/Us_rx" class="contact-item">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-<p>Telegram</p>
-</a>
-
-<a href="https://discord.com/users/1115922939485880361" class="contact-item">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-<p>Discord</p>
-</a>
-
-</div>
-
-<!-- BUYERS -->
-<div class="buyers-box">
-🛒 Total Buyers: 14
-</div>
-
-</div>
-
-<!-- FOOTER -->
-<div class="footer-terms">
-<p>
-Alix-MOD | Lifetime | No VPN | Private Code
-</p>
-</div>
-
-<script>
-function openPay(name){
-document.getElementById("mainPage").style.display="none";
-document.getElementById("paymentPage").style.display="block";
-document.getElementById("deviceTitle").innerText=name;
-}
-
-function back(){
-document.getElementById("paymentPage").style.display="none";
-document.getElementById("mainPage").style.display="block";
-}
-</script>
-
-</body>
-</html>
