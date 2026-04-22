@@ -14,125 +14,117 @@ body {
 
 header {
     background:#fff;
-    padding:15px;
+    padding:12px;
     text-align:center;
     border-bottom:1px solid #ddd;
 }
 
+/* VIDEO */
 .video {
     text-align:center;
-    padding:20px;
+    padding:10px;
     background:white;
-    margin:20px;
+    margin:10px;
     border-radius:10px;
 }
 
 .video iframe {
-    width:90%;
-    max-width:800px;
-    height:400px;
+    width:100%;
+    height:200px;
     border:none;
 }
 
+/* STORE */
 .container {
-    padding:30px;
+    padding:10px;
 }
 
 .platforms {
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
 }
 
 .card {
     background:white;
     border:1px solid #ddd;
-    border-radius:12px;
-    width:220px;
-    padding:20px;
+    border-radius:10px;
+    padding:10px;
     text-align:center;
 }
 
 .card img {
-    width:80px;
+    width:50px;
 }
 
 button {
-    margin-top:10px;
-    padding:10px;
+    margin-top:5px;
+    padding:8px;
     width:100%;
     background:#ffa41c;
     border:none;
-    border-radius:8px;
-    cursor:pointer;
+    border-radius:6px;
 }
 
+/* PAYMENT */
 #paymentPage {
     display:none;
     text-align:center;
-    padding:30px;
+    padding:10px;
 }
 
 .pay-options {
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    margin-top:10px;
 }
 
 .pay-card {
     background:white;
     border:1px solid #ddd;
-    padding:15px;
-    width:160px;
-    text-align:center;
-    border-radius:12px;
+    padding:10px;
+    border-radius:10px;
 }
 
 .pay-card img {
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
 }
 
+/* CONTACT */
 .contact {
     background:#fff;
-    padding:25px;
-    margin:20px;
+    padding:15px;
+    margin:10px;
     border-radius:10px;
-    text-align:center;
 }
 
 .contact-box {
     display:flex;
     justify-content:space-between;
-    margin-top:20px;
 }
 
 .contact-item {
-    width:45%;
+    width:48%;
     background:#f9f9f9;
-    padding:15px;
+    padding:10px;
     border-radius:10px;
+    text-align:center;
     text-decoration:none;
-    color:#000;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    color:black;
 }
 
 .contact-item img {
-    width:50px;
-    margin-bottom:10px;
+    width:40px;
 }
 
+/* FOOTER */
 .footer-terms {
     background:#fff;
-    border-top:1px solid #ddd;
-    padding:30px;
+    padding:15px;
+    font-size:13px;
     text-align:center;
-    font-size:14px;
 }
 </style>
 </head>
@@ -140,7 +132,7 @@ button {
 <body>
 
 <header>
-<h1>Alix-MOD</h1>
+<h2>Alix-MOD</h2>
 </header>
 
 <div class="video">
@@ -154,20 +146,20 @@ button {
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
-<h3>iOS</h3>
+<p>iOS</p>
 <button onclick="openPay('iOS')">Select</button>
 </div>
 
 <div class="card">
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg">
-<h3>Android</h3>
+<p>Android</p>
 <button onclick="openPay('Android')">Select</button>
 </div>
 
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png">
-<h3>Computer</h3>
-<button onclick="openPay('Computer')">Select</button>
+<p>PC</p>
+<button onclick="openPay('PC')">Select</button>
 </div>
 
 </div>
@@ -176,81 +168,63 @@ button {
 
 <!-- PAYMENT -->
 <div id="paymentPage">
-<h2 id="deviceTitle"></h2>
-
-<h3>Select Payment Method</h3>
-<p>Contact me to complete purchase</p>
+<h3 id="deviceTitle"></h3>
 
 <div class="pay-options">
 
 <div class="pay-card">
 <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
-<p>PayPal ($5)</p>
+<p>PayPal $5</p>
 </div>
 
 <div class="pay-card">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtVSSiw-oOmMhxlC1RWE_jowqLPjA3XBwtNKW6j8lg&s=10">
-<p>USDT (BEP20) $4</p>
+<p>USDT $4</p>
 </div>
 
 <div class="pay-card">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_jv45R6IfJ-tUpSM_wiZuIQvCyjfex-a7dplE23cfA&s=10">
-<p>Wise ($4)</p>
+<p>Wise $4</p>
 </div>
 
 <div class="pay-card">
-<img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png">
-<p>Binance Pay ($4)</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJPx2CK7RSdeBJUSMSB_I46RPvB8BuXr_eGns-f_t_A&s=10">
+<p>Binance Pay $4</p>
 </div>
 
 <div class="pay-card">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png">
-<p>RedotPay ($4)</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQplSM5RDSTSaDjLkJn-xzAnibPmgGI1BtrH5eCGIDw3A&s=10">
+<p>RedotPay $4</p>
 </div>
 
 </div>
 
-<p style="margin-top:20px;font-weight:bold;">
-📩 Contact me on Telegram or Discord to complete purchase
-</p>
+<p>📩 Contact me to buy</p>
 
 <button onclick="back()">⬅ Back</button>
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
-<h2>Contact</h2>
-
 <div class="contact-box">
 
-<a href="https://t.me/Us_rx" target="_blank" class="contact-item">
+<a href="https://t.me/Us_rx" class="contact-item">
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-<span>Telegram</span>
+<p>Telegram</p>
 </a>
 
-<a href="https://discord.com/users/1115922939485880361" target="_blank" class="contact-item">
+<a href="https://discord.com/users/1115922939485880361" class="contact-item">
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
-<span>Discord</span>
+<p>Discord</p>
 </a>
 
 </div>
 </div>
 
-<!-- TERMS -->
+<!-- FOOTER -->
 <div class="footer-terms">
 <p>
-📌 Activation Instructions<br>
-Subscribe + Select device + Do not share<br><br>
-
-⚠️ No VPN allowed<br><br>
-
-📱 Android / iOS / PC<br><br>
-
-💵 Price: $4 - $5<br><br>
-
-⚡ Lifetime + Updates<br><br>
-
-🚫 Private code - sharing = ban
+Alix-MOD | Lifetime | No VPN | Private Code
 </p>
 </div>
 
@@ -258,7 +232,7 @@ Subscribe + Select device + Do not share<br><br>
 function openPay(name){
 document.getElementById("mainPage").style.display="none";
 document.getElementById("paymentPage").style.display="block";
-document.getElementById("deviceTitle").innerText="Payment for "+name;
+document.getElementById("deviceTitle").innerText=name;
 }
 
 function back(){
