@@ -20,10 +20,6 @@ header {
     border-bottom:1px solid #ddd;
 }
 
-h1 {
-    margin:0;
-}
-
 /* VIDEO */
 .video {
     text-align:center;
@@ -102,17 +98,23 @@ button {
 .pay-card img {
     width:70px;
     height:70px;
-    object-fit:contain;
 }
 
-.back-btn {
-    margin-top:20px;
-    padding:10px;
-    width:200px;
-    background:#ddd;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+/* CONTACT */
+.contact {
+    background:#fff;
+    padding:25px;
+    margin:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.contact a {
+    display:block;
+    margin:10px;
+    text-decoration:none;
+    color:#0077cc;
+    font-weight:bold;
 }
 
 /* FOOTER TERMS */
@@ -120,19 +122,10 @@ button {
     background:#ffffff;
     border-top:1px solid #ddd;
     padding:30px;
-    margin-top:40px;
+    margin-top:20px;
     text-align:center;
     font-size:14px;
-    color:#333;
     line-height:1.6;
-}
-
-.footer-terms h3 {
-    margin-top:20px;
-}
-
-.footer-terms p {
-    margin:8px 0;
 }
 </style>
 </head>
@@ -143,81 +136,81 @@ button {
     <h1>Alix-MOD</h1>
 </header>
 
-<!-- VIDEO -->
 <div class="video">
     <iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
 </div>
 
-<!-- MAIN STORE -->
+<!-- STORE -->
 <div id="mainPage">
-
 <div class="container">
-    <div class="platforms">
+<div class="platforms">
 
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
-            <h3>iOS</h3>
-            <button onclick="openPay('iOS')">Select</button>
-        </div>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+<h3>iOS</h3>
+<button onclick="openPay('iOS')">Select</button>
+</div>
 
-        <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg">
-            <h3>Android</h3>
-            <button onclick="openPay('Android')">Select</button>
-        </div>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg">
+<h3>Android</h3>
+<button onclick="openPay('Android')">Select</button>
+</div>
 
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png">
-            <h3>Computer</h3>
-            <button onclick="openPay('Computer')">Select</button>
-        </div>
-
-    </div>
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png">
+<h3>Computer</h3>
+<button onclick="openPay('Computer')">Select</button>
 </div>
 
 </div>
+</div>
+</div>
 
-<!-- PAYMENT PAGE -->
+<!-- PAYMENT -->
 <div id="paymentPage">
+<h2 id="deviceTitle"></h2>
 
-    <h2 id="deviceTitle"></h2>
+<div class="pay-options">
 
-    <h3>Choose Payment Method</h3>
+<div class="pay-card">
+<img src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
+<p>PayPal ($5)</p>
+<button onclick="pay('paypal')">Pay</button>
+</div>
 
-    <div class="pay-options">
+<div class="pay-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtVSSiw-oOmMhxlC1RWE_jowqLPjA3XBwtNKW6j8lg&s=10">
+<p>USDT (BEP20) $4</p>
+<button onclick="pay('usdt')">Pay</button>
+</div>
 
-        <!-- PayPal -->
-        <div class="pay-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
-            <p>PayPal ($5)</p>
-            <button onclick="pay('paypal')">Pay</button>
-        </div>
-
-        <!-- USDT -->
-        <div class="pay-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtVSSiw-oOmMhxlC1RWE_jowqLPjA3XBwtNKW6j8lg&s=10">
-            <p>USDT (BEP20) $4</p>
-            <button onclick="pay('usdt')">Pay</button>
-        </div>
-
-        <!-- Wise -->
-        <div class="pay-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_jv45R6IfJ-tUpSM_wiZuIQvCyjfex-a7dplE23cfA&s=10">
-            <p>Wise ($4)</p>
-            <button onclick="pay('wise')">Pay</button>
-        </div>
-
-    </div>
-
-    <button class="back-btn" onclick="back()">⬅ Back</button>
+<div class="pay-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_jv45R6IfJ-tUpSM_wiZuIQvCyjfex-a7dplE23cfA&s=10">
+<p>Wise ($4)</p>
+<button onclick="pay('wise')">Pay</button>
+</div>
 
 </div>
 
-<!-- FOOTER TERMS -->
+<button onclick="back()">⬅ Back</button>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+<h2>Contact</h2>
+
+<a href="https://t.me/Us_rx" target="_blank">📩 Telegram: @Us_rx</a>
+
+<p>🎮 Discord: a7ju</p>
+<button onclick="copyDiscord()">Copy Discord</button>
+
+</div>
+
+<!-- TERMS -->
 <div class="footer-terms">
 
 <h3>📌 Activation Instructions</h3>
-
 <p>
 1️⃣ Subscribe to the official YouTube channel<br>
 2️⃣ Select your device's operating system (Android / iOS / Computer)<br>
@@ -225,7 +218,6 @@ button {
 </p>
 
 <h3>📌 Important Notes</h3>
-
 <p>
 The use of VPN services while using Alix-MOD is strictly prohibited.
 </p>
@@ -235,7 +227,6 @@ The use of VPN services while using Alix-MOD is strictly prohibited.
 </p>
 
 <h3>📱 Supported Devices</h3>
-
 <p>
 ✔ Android<br>
 ✔ iOS<br>
@@ -248,14 +239,12 @@ The use of VPN services while using Alix-MOD is strictly prohibited.
 </p>
 
 <h3>⚡ Features</h3>
-
 <p>
 • Lifetime access<br>
 • Free automatic updates
 </p>
 
 <h3 style="color:red;">🚫 Warning</h3>
-
 <p>
 This code is private and confidential.<br>
 Any sharing or leaking will result in a ban.
@@ -264,49 +253,33 @@ Any sharing or leaking will result in a ban.
 </div>
 
 <script>
-
-let device = "";
-
 function openPay(name){
-    device = name;
-
-    document.getElementById("mainPage").style.display = "none";
-    document.getElementById("paymentPage").style.display = "block";
-
-    document.getElementById("deviceTitle").innerText = "Payment for " + device;
+document.getElementById("mainPage").style.display="none";
+document.getElementById("paymentPage").style.display="block";
+document.getElementById("deviceTitle").innerText="Payment for "+name;
 }
 
 function back(){
-    document.getElementById("paymentPage").style.display = "none";
-    document.getElementById("mainPage").style.display = "block";
+document.getElementById("paymentPage").style.display="none";
+document.getElementById("mainPage").style.display="block";
 }
 
 function pay(method){
-
-    if(method === "paypal"){
-        let confirmPay = confirm("PayPal Payment $5 - Continue?");
-        if(confirmPay){
-            window.location.href = "https://www.paypal.me/YOURNAME/5";
-        }
-    }
-
-    if(method === "usdt"){
-        alert(
-`USDT (BEP20)
-
-Price: $4
-
-Address:
-0x461622008b961d7b9210c7b0f9c5f38ecbe5c985`
-        );
-    }
-
-    if(method === "wise"){
-        alert("Wise Payment: $4\nSend to your Wise account/email");
-    }
-
+if(method==="paypal"){
+window.location.href="https://www.paypal.me/YOURNAME/5";
+}
+if(method==="usdt"){
+alert("Send $4 USDT (BEP20)\n0x461622008b961d7b9210c7b0f9c5f38ecbe5c985");
+}
+if(method==="wise"){
+alert("Send $4 via Wise");
+}
 }
 
+function copyDiscord(){
+navigator.clipboard.writeText("a7ju");
+alert("Discord username copied!");
+}
 </script>
 
 </body>
