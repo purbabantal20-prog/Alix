@@ -5,7 +5,145 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alix-MOD</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:#f5f5f5;
+}
+
+header {
+    background:#fff;
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+/* VIDEO */
+.video {
+    text-align:center;
+    padding:10px;
+    background:white;
+    margin:10px;
+    border-radius:10px;
+}
+
+.video iframe {
+    width:100%;
+    height:200px;
+    border:none;
+}
+
+/* STORE */
+.container {
+    padding:10px;
+}
+
+.platforms {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:10px;
+}
+
+.card {
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+}
+
+.card img {
+    width:50px;
+}
+
+button {
+    margin-top:5px;
+    padding:8px;
+    width:100%;
+    background:#ffa41c;
+    border:none;
+    border-radius:6px;
+}
+
+/* PAYMENT */
+#paymentPage {
+    display:none;
+    text-align:center;
+    padding:10px;
+}
+
+.pay-options {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    margin-top:10px;
+}
+
+.pay-card {
+    background:white;
+    border:1px solid #ddd;
+    padding:10px;
+    border-radius:10px;
+}
+
+.pay-card img {
+    width:50px;
+    height:50px;
+}
+
+/* 🔥 PayPal تكبير فقط */
+.pay-card img.paypal {
+    width:75px;
+    height:75px;
+}
+
+/* CONTACT */
+.contact {
+    background:#fff;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+}
+
+.contact-box {
+    display:flex;
+    justify-content:space-between;
+}
+
+.contact-item {
+    width:48%;
+    background:#f9f9f9;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+}
+
+.contact-item img {
+    width:40px;
+}
+
+/* BUYERS */
+.buyers-box {
+    background:#fff;
+    padding:10px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer-terms {
+    background:#fff;
+    padding:15px;
+    font-size:13px;
+    text-align:center;
+}
+</style>
 </head>
 
 <body>
@@ -14,7 +152,6 @@
 <h2>Alix-MOD</h2>
 </header>
 
-<!-- VIDEO -->
 <div class="video">
 <iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
 </div>
@@ -22,7 +159,6 @@
 <!-- STORE -->
 <div id="mainPage">
 <div class="container">
-
 <div class="platforms">
 
 <div class="card">
@@ -39,18 +175,16 @@
 
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png">
-<p>Computer</p>
-<button onclick="openPay('Computer')">Select</button>
+<p>PC</p>
+<button onclick="openPay('PC')">Select</button>
 </div>
 
 </div>
-
 </div>
 </div>
 
 <!-- PAYMENT -->
 <div id="paymentPage">
-
 <h3 id="deviceTitle"></h3>
 
 <div class="pay-options">
@@ -62,7 +196,7 @@
 
 <div class="pay-card">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYXtVSSiw-oOmMhxlC1RWE_jowqLPjA3XBwtNKW6j8lg&s=10">
-<p>USDT (BEP20) $4</p>
+<p>USDT $4</p>
 </div>
 
 <div class="pay-card">
@@ -82,17 +216,15 @@
 
 </div>
 
-<p class="contact-text">
-📩 Contact me on Telegram or Discord to complete purchase
+<p style="margin-top:10px; font-weight:bold;">
+📩 Contact me on Telegram or Discord to buy
 </p>
 
 <button onclick="back()">⬅ Back</button>
-
 </div>
 
 <!-- CONTACT -->
 <div class="contact">
-
 <div class="contact-box">
 
 <a href="https://t.me/Us_rx" class="contact-item">
@@ -107,31 +239,18 @@
 
 </div>
 
-<!-- BUYERS COUNTER UNDER CONTACT -->
+<!-- BUYERS -->
 <div class="buyers-box">
-🛒 Total Buyers: <span id="buyersCount">14</span>
+🛒 Total Buyers: 14
 </div>
 
 </div>
 
 <!-- FOOTER -->
 <div class="footer-terms">
-
-<p><b>Alix-MOD | Lifetime | No VPN | Private Code</b></p>
-
 <p>
-📌 Activation Instructions<br>
-1️⃣ Subscribe to YouTube channel<br>
-2️⃣ Select device<br>
-3️⃣ Do NOT share code<br><br>
-
-📱 Android / iOS / PC<br><br>
-
-⚡ Lifetime access + updates<br><br>
-
-🚫 Sharing = ban
+Alix-MOD | Lifetime | No VPN | Private Code
 </p>
-
 </div>
 
 <script>
