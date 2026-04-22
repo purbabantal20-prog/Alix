@@ -109,15 +109,30 @@ button {
     text-align:center;
 }
 
-.contact a {
-    display:block;
-    margin:10px;
-    text-decoration:none;
-    color:#0077cc;
-    font-weight:bold;
+.contact-box {
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
 }
 
-/* FOOTER TERMS */
+.contact-item {
+    width:45%;
+    background:#f9f9f9;
+    padding:15px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#000;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.contact-item img {
+    width:50px;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
 .footer-terms {
     background:#ffffff;
     border-top:1px solid #ddd;
@@ -133,11 +148,12 @@ button {
 <body>
 
 <header>
-    <h1>Alix-MOD</h1>
+<h1>Alix-MOD</h1>
 </header>
 
+<!-- VIDEO -->
 <div class="video">
-    <iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
+<iframe src="https://www.youtube.com/embed/X56Y64Lr3mg"></iframe>
 </div>
 
 <!-- STORE -->
@@ -200,11 +216,19 @@ button {
 <div class="contact">
 <h2>Contact</h2>
 
-<a href="https://t.me/Us_rx" target="_blank">📩 Telegram: @Us_rx</a>
+<div class="contact-box">
 
-<p>🎮 Discord: a7ju</p>
-<button onclick="copyDiscord()">Copy Discord</button>
+<a href="https://t.me/Us_rx" target="_blank" class="contact-item">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+<span>Telegram</span>
+</a>
 
+<a href="https://discord.com/users/1115922939485880361" target="_blank" class="contact-item">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+<span>Discord</span>
+</a>
+
+</div>
 </div>
 
 <!-- TERMS -->
@@ -223,7 +247,7 @@ The use of VPN services while using Alix-MOD is strictly prohibited.
 </p>
 
 <p>
-⚠️ By receiving the code, you automatically agree to all the terms and conditions mentioned above.
+⚠️ By receiving the code, you agree to all terms above.
 </p>
 
 <h3>📱 Supported Devices</h3>
@@ -234,20 +258,19 @@ The use of VPN services while using Alix-MOD is strictly prohibited.
 </p>
 
 <p>
-⏳ Subscription: Lifetime<br>
-💵 Currency: USD
+⏳ Lifetime<br>
+💵 USD
 </p>
 
 <h3>⚡ Features</h3>
 <p>
 • Lifetime access<br>
-• Free automatic updates
+• Free updates
 </p>
 
 <h3 style="color:red;">🚫 Warning</h3>
 <p>
-This code is private and confidential.<br>
-Any sharing or leaking will result in a ban.
+Private code. Sharing = ban.
 </p>
 
 </div>
@@ -274,11 +297,6 @@ alert("Send $4 USDT (BEP20)\n0x461622008b961d7b9210c7b0f9c5f38ecbe5c985");
 if(method==="wise"){
 alert("Send $4 via Wise");
 }
-}
-
-function copyDiscord(){
-navigator.clipboard.writeText("a7ju");
-alert("Discord username copied!");
 }
 </script>
 
