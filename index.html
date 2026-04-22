@@ -49,14 +49,19 @@ header {
     background:white;
     border:1px solid #ddd;
     border-radius:10px;
-    padding:10px;
+    padding:12px;
     text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:120px;
 }
 
 .card img {
     width:50px;
 }
 
+/* BUTTON */
 button {
     margin-top:5px;
     padding:8px;
@@ -83,13 +88,19 @@ button {
 .pay-card {
     background:white;
     border:1px solid #ddd;
-    padding:10px;
+    padding:12px;
     border-radius:10px;
 }
 
 .pay-card img {
-    width:50px;
-    height:50px;
+    width:60px;
+    height:60px;
+}
+
+/* تكبير PayPal */
+.pay-card img.paypal {
+    width:75px;
+    height:75px;
 }
 
 /* CONTACT */
@@ -125,6 +136,7 @@ button {
     padding:15px;
     font-size:13px;
     text-align:center;
+    line-height:1.6;
 }
 </style>
 </head>
@@ -173,7 +185,7 @@ button {
 <div class="pay-options">
 
 <div class="pay-card">
-<img src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
+<img class="paypal" src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
 <p>PayPal $5</p>
 </div>
 
@@ -199,7 +211,9 @@ button {
 
 </div>
 
-<p>📩 Contact me to buy</p>
+<p style="margin-top:15px; font-weight:bold;">
+📩 To purchase, please contact me via Telegram or Discord and mention your selected payment method.
+</p>
 
 <button onclick="back()">⬅ Back</button>
 </div>
@@ -223,9 +237,30 @@ button {
 
 <!-- FOOTER -->
 <div class="footer-terms">
+
+<p><b>Alix-MOD | Lifetime | No VPN | Private Code</b></p>
+
+<br>
+
 <p>
-Alix-MOD | Lifetime | No VPN | Private Code
+📌 Activation Instructions<br>
+1️⃣ Subscribe to the official YouTube channel<br>
+2️⃣ Select your device<br>
+3️⃣ Do NOT share the code<br><br>
+
+📌 Important Notes<br>
+VPN usage is strictly prohibited<br><br>
+
+📱 Supported: Android / iOS / PC<br><br>
+
+⚡ Features<br>
+• Lifetime access<br>
+• Free updates<br><br>
+
+🚫 Warning<br>
+Sharing = permanent ban
 </p>
+
 </div>
 
 <script>
