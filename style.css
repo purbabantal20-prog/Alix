@@ -11,6 +11,12 @@ header {
     border-bottom:1px solid #ddd;
 }
 
+.subtitle {
+    font-size:13px;
+    color:#666;
+    margin-top:5px;
+}
+
 /* VIDEO */
 .video {
     text-align:center;
@@ -41,12 +47,8 @@ header {
     background:white;
     border:1px solid #ddd;
     border-radius:10px;
-    padding:12px;
+    padding:10px;
     text-align:center;
-    height:120px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
 }
 
 .card img {
@@ -55,7 +57,9 @@ header {
 
 /* BUTTON */
 button {
+    margin-top:5px;
     padding:8px;
+    width:100%;
     background:#ffa41c;
     border:none;
     border-radius:6px;
@@ -78,29 +82,20 @@ button {
 .pay-card {
     background:white;
     border:1px solid #ddd;
-    padding:12px;
-    border-radius:10px;
-}
-
-.pay-card img {
-    width:60px;
-    height:60px;
-}
-
-.pay-card img.paypal {
-    width:75px;
-    height:75px;
-}
-
-/* BUYERS */
-.buyers-box {
-    background:#fff;
-    margin:10px auto;
     padding:10px;
-    width:200px;
     border-radius:10px;
-    border:1px solid #ddd;
-    font-weight:bold;
+}
+
+/* 🔥 تكبير كل الصور */
+.pay-card img {
+    width:65px;
+    height:65px;
+}
+
+/* 🔥 PayPal أكبر بكثير */
+.pay-card img.paypal {
+    width:95px;
+    height:95px;
 }
 
 /* CONTACT */
@@ -130,8 +125,14 @@ button {
     width:40px;
 }
 
-.contact-text {
-    margin-top:15px;
+/* BUYERS */
+.buyers-box {
+    background:#fff;
+    padding:10px;
+    margin-top:10px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    text-align:center;
     font-weight:bold;
 }
 
